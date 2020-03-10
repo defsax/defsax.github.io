@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html on Perry Defayette</title>
-    <link>https://example.com/tags/html/</link>
+    <link>https://defsax.github.io/tags/html/</link>
     <description>Recent content in html on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Feb 2020 15:40:38 -0500</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://defsax.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Letterscrambler</title>
-      <link>https://example.com/projects/letterscrambler/</link>
+      <link>https://defsax.github.io/projects/letterscrambler/</link>
       <pubDate>Tue, 11 Feb 2020 15:40:38 -0500</pubDate>
       
-      <guid>https://example.com/projects/letterscrambler/</guid>
+      <guid>https://defsax.github.io/projects/letterscrambler/</guid>
       <description>&amp;hellip;For lack of a better title.
 This application takes some user input, checks letter validity against a pre-written array of characters (so that the worker doesn&amp;rsquo;t run forever), then summons a web worker to randomly cycle the letters until the user word/phrase is found. You can control the worker delay using the slider input.
 On github.

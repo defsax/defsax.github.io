@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>posts on Perry Defayette</title>
-    <link>https://example.com/posts/</link>
+    <link>https://defsax.github.io/posts/</link>
     <description>Recent content in posts on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Feb 2020 15:29:02 -0500</lastBuildDate>
     
-	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://defsax.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a Web Worker in Codepen</title>
-      <link>https://example.com/posts/codepenwebworker/</link>
+      <link>https://defsax.github.io/posts/codepenwebworker/</link>
       <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
       
-      <guid>https://example.com/posts/codepenwebworker/</guid>
+      <guid>https://defsax.github.io/posts/codepenwebworker/</guid>
       <description>In trying to find a way to integrate javascript projects into this blog without loading special seperate css and js files into my markdown, I came across some built-in hugo shortcode for codepen. After some tinkering I was able to embed codepen projects right into my markdown using just the slug
 (as in: {{&amp;lt;codePen xxxxxxx&amp;gt;}}).
 However I then ran into the issue of trying to load any generic worker.js file to get a web worker running.</description>
