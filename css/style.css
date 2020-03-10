@@ -1,0 +1,32 @@
+#list_item{
+  display: inline-block;
+  font-family: Miriam Libre, serif;
+  font-size: 0.85em;
+  color: white;
+}
+#list_link:hover{
+  color: red;
+}
+#list_link{
+  text-decoration: none;
+  border-bottom: none;
+  background: black;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+#initials_logo{
+  font-family: Miriam Libre, serif;
+  display: block;
+  width: 1.2em;
+  border-radius: 50px;
+  font-size: 10em;
+  font-weight: bold;
+  margin: auto;
+  animation: rotate 17.5s linear infinite;
+}
+
+@keyframes rotate{
+  to{
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

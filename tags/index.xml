@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Perry Defayette</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in Tags on Perry Defayette</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Feb 2020 15:33:36 -0500</lastBuildDate>
+    
+	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>codepen</title>
+      <link>https://example.com/tags/codepen/</link>
+      <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
+      
+      <guid>https://example.com/tags/codepen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://example.com/tags/javascript/</link>
+      <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
+      
+      <guid>https://example.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://example.com/tags/web/</link>
+      <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
+      
+      <guid>https://example.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://example.com/tags/html/</link>
+      <pubDate>Tue, 11 Feb 2020 15:40:38 -0500</pubDate>
+      
+      <guid>https://example.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

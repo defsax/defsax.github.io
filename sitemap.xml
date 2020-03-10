@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://example.com/tags/codepen/</loc>
+    <lastmod>2020-02-25T15:33:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/codepenwebworker/</loc>
+    <lastmod>2020-02-25T15:33:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/javascript/</loc>
+    <lastmod>2020-02-25T15:33:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2020-02-25T15:33:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/web/</loc>
+    <lastmod>2020-02-25T15:33:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/html/</loc>
+    <lastmod>2020-02-11T15:40:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/projects/letterscrambler/</loc>
+    <lastmod>2020-02-11T15:40:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2020-02-11T15:29:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/projects/</loc>
+    <lastmod>2020-02-07T13:01:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/about/</loc>
+    <lastmod>2020-02-05T10:50:35-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2020-02-05T10:50:35-05:00</lastmod>
+  </url>
+  
+</urlset>

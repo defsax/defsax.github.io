@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>what i&#39;m working on... on Perry Defayette</title>
+    <link>https://example.com/projects/</link>
+    <description>Recent content in what i&#39;m working on... on Perry Defayette</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Feb 2020 13:01:36 -0500</lastBuildDate>
+    
+	<atom:link href="https://example.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Letterscrambler</title>
+      <link>https://example.com/projects/letterscrambler/</link>
+      <pubDate>Tue, 11 Feb 2020 15:40:38 -0500</pubDate>
+      
+      <guid>https://example.com/projects/letterscrambler/</guid>
+      <description>&amp;hellip;For lack of a better title.
+This application takes some user input, checks letter validity against a pre-written array of characters (so that the worker doesn&amp;rsquo;t run forever), then summons a web worker to randomly cycle the letters until the user word/phrase is found. You can control the worker delay using the slider input.
+On github.
+See the Pen Letter Scrambler by Perry (@defsax) on CodePen.  The user enters their word or phrase into the text box, then presses go.</description>
+    </item>
+    
+  </channel>
+</rss>
