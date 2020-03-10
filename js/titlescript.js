@@ -10,7 +10,7 @@ function start(phrase){
       w = new Worker("js/scramble.js");
     }
     else{
-      console.log("Worker already created.");
+      //console.log("Worker already created.");
     }
     
     //store value to be found
