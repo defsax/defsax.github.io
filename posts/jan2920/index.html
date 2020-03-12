@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.67.0" />
-  <link rel="canonical" href="https://defsax.github.io/projects/">
+  <link rel="canonical" href="https://defsax.github.io/posts/jan2920/">
 
   
 
@@ -35,7 +35,7 @@
 
   
   
-  <title>what i&#39;m working on... | Perry Defayette</title>
+  <title>Installing Linux on Thinkpad X120e | Perry Defayette</title>
 </head>
 
   <style>
@@ -46,7 +46,7 @@
       padding-bottom: 2.25rem;
     }
   </style>
-  <body onload="start(&#34;what i&#39;m working on...&#34;)">
+  <body onload="start(&#34;Installing Linux on Thinkpad X120e&#34;)">
     <a href="#main">skip to content</a>
     <svg style="display: none">
   <symbol id="bookmark" viewBox="0 0 40 50">
@@ -170,7 +170,7 @@
       
       
       
-      <a href="/projects/" aria-current="page">
+      <a href="/projects/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -231,86 +231,124 @@
         <div>
           
   <main id="main">
-    <h1 id="title">what i&#39;m working on...</h1>
+    <h1 id="title">Installing Linux on Thinkpad X120e</h1>
     
-    <ul class="patterns-list">
     
-      <li>
-        <h2>
-          <a href="https://defsax.github.io/projects/letterscrambler/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Letterscrambler
-          </a>
-        </h2>
-      </li>        
+      <div class="date">
+        
+        
+        <strong aria-hidden="true">Publish date: </strong>Jan 29, 2020
+        
+          
+            <br>
+            <strong aria-hidden="true">Last updated: </strong>Mar 11, 2020
+          
+        
+      </div>
+
+      
+        <div class="tags">
+          <strong aria-hidden="true">Tags: </strong>
+          <ul aria-label="tags">
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://defsax.github.io/tags/linux/">linux</a>
+              </li>
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://defsax.github.io/tags/thinkpad/">thinkpad</a>
+              </li>
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://defsax.github.io/tags/lubuntu/">lubuntu</a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      
+      <p><strong>Solution:</strong></p>
+<p>When installing any linux flavour that uses Calamares to Thinkpad X120e, flash USB with rufus. Set partition scheme to MBR and target system to BIOS or UEFI. In the BIOS config settings in the laptop, set UEFI/Legacy Boot to Both, and set UEFI/Legacy Boot Priority to Legacy First. Uncheck install third party software and choose Erase disk and install.</p>
+<p><a href="https://www.learningpenguin.net/2018/07/13/fix-grub-efi-amd64-signed-package-failed-to-install-into-target/">https://www.learningpenguin.net/2018/07/13/fix-grub-efi-amd64-signed-package-failed-to-install-into-target/</a></p>
+<p><a href="https://www.learningpenguin.net/2018/07/13/fix-cannot-boot-after-installing-linux-mint-in-uefi-mode/">https://www.learningpenguin.net/2018/07/13/fix-cannot-boot-after-installing-linux-mint-in-uefi-mode/</a></p>
+<br>
+<p><strong>How I got there:</strong></p>
+<ul>
+<li>
+<p>Researched which flavour of Linux to go with.</p>
+</li>
+<li>
+<p>Ended up choosing Lubuntu because it&rsquo;s lightweight and the X120e is an older machine.</p>
+</li>
+<li>
+<p>Made bootable Lubuntu iso using Rufus.</p>
+</li>
+<li>
+<p>Attempted to install fresh copy of Lubuntu.</p>
+</li>
+<li>
+<p>Ran into unknown error, then gave up for a month because moving apartments.</p>
+</li>
+<li>
+<p>Settled in. Tried again.</p>
+</li>
+<li>
+<p>Live boot into Lubuntu 19.10 desktop and choose Erase and Install.</p>
+</li>
+<li>
+<p>Ran into the same error.</p>
+</li>
+<li>
+<p>Researched error: &ldquo;GRUB installation failed. The &lsquo;grub-efi-amd64-signed&rsquo; package failed to install into / target/. Without the GRUB bootloader, the installed system will not boot.&rdquo;</p>
+</li>
+<li>
+<p>Tried switching from MBR to GPT and changing boot to UEFI only. Same error.</p>
+</li>
+<li>
+<p>Tried a different thumb drive. Try a different USB port.</p>
+</li>
+<li>
+<p>Tried Lubuntu 18.04.3 desktop, it has longer support period anyways.</p>
+</li>
+<li>
+<p>Tried Ubuntu, Kubuntu, Lubuntu, and Xubuntu. All use the same installer framework Calamares.</p>
+</li>
+<li>
+<p>Tried the &ldquo;Something Else&rdquo; option and manually create my own partitions: <br>
+efi: 500mb  <br>
+swap: 2gb   <br>
+root: 10gb  <br>
+home: rest of the drive.</p>
+</li>
+<li>
+<p>Tried mounting /dev/sda1 EFI System Partition and running grub-install. Get new error: grub-install failed to get canonical path of cow.</p>
+</li>
+<li>
+<p>Go back to &ldquo;Something Else&rdquo; but this time uncheck &ldquo;install third party software&rdquo;. Also have efi, swap, /root partitions and no /home partition.</p>
+</li>
+<li>
+<p>Tried reflashing Lubuntu USB with rufus and instead setting partition scheme back to MBR, BIOS or UEFI. Set X120e&rsquo;s boot to both and legacy first. Erase and install instead of &ldquo;Something else&rdquo;.</p>
+</li>
+<li>
+<p>It worked.</p>
+</li>
+</ul>
+
     
-    </ul>
+    
   </main>
-  
-    <ul> 
-    
-      
-        <li id="list_item"> 
-
-        <a href="/tags/codepen/" id="list_link">
-          (1) codepen
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/html/" id="list_link">
-          (1) html
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/hugo/" id="list_link">
-          (1) hugo
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/javascript/" id="list_link">
-          (3) javascript
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/linux/" id="list_link">
-          (1) linux
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/lubuntu/" id="list_link">
-          (1) lubuntu
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/thinkpad/" id="list_link">
-          (1) thinkpad
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/web/" id="list_link">
-          (2) web
-        </a>
-        </li> 
-      
-    
-  </ul>
-  
             
           <footer role="contentinfo">
   <div>

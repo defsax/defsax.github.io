@@ -36,10 +36,10 @@ See the Pen Letter Scrambler by Perry (@defsax) on CodePen.  The user enters the
     
     <item>
       <title>NOTES: Troubles Running/Linking Javascript in Hugo...</title>
-      <link>https://defsax.github.io/posts/feb7/</link>
+      <link>https://defsax.github.io/posts/feb0720/</link>
       <pubDate>Fri, 07 Feb 2020 17:16:00 -0400</pubDate>
       
-      <guid>https://defsax.github.io/posts/feb7/</guid>
+      <guid>https://defsax.github.io/posts/feb0720/</guid>
       <description>Overrode theme&amp;rsquo;s head.html partial in order to add my own css and js files. Getting error on attempting to onload=&amp;quot;start()&amp;rdquo; in baseof.html:
 The resource from “http://localhost:1313/projects/js/titlescript.js” was blocked due to MIME type (“text/plain”) mismatch (X-Content-Type-Options: nosniff).  It&amp;rsquo;d appear that the server is trying to load the script from the wrong directory. Changing the load directory in the &amp;lt;script&amp;gt; tag worked for titlescript.js but not scramble.js
 Error claims that the script was blocked due to MIME type (&amp;ldquo;text/plain&amp;rdquo;) mismatch, but I&amp;rsquo;ve explicitly set type=&amp;quot;application/javascript&amp;rdquo;&amp;hellip;</description>
@@ -52,6 +52,20 @@ Error claims that the script was blocked due to MIME type (&amp;ldquo;text/plain
       
       <guid>https://defsax.github.io/about/</guid>
       <description>My name is Perry Defayette. Whether a code or hardware project, I enjoy tinkering, design and diy. This blog is intended as equal parts portfolio, dev blog, and film blog (sometimes).</description>
+    </item>
+    
+    <item>
+      <title>Installing Linux on Thinkpad X120e</title>
+      <link>https://defsax.github.io/posts/jan2920/</link>
+      <pubDate>Wed, 29 Jan 2020 15:33:36 -0500</pubDate>
+      
+      <guid>https://defsax.github.io/posts/jan2920/</guid>
+      <description>Solution:
+When installing any linux flavour that uses Calamares to Thinkpad X120e, flash USB with rufus. Set partition scheme to MBR and target system to BIOS or UEFI. In the BIOS config settings in the laptop, set UEFI/Legacy Boot to Both, and set UEFI/Legacy Boot Priority to Legacy First. Uncheck install third party software and choose Erase disk and install.
+https://www.learningpenguin.net/2018/07/13/fix-grub-efi-amd64-signed-package-failed-to-install-into-target/
+https://www.learningpenguin.net/2018/07/13/fix-cannot-boot-after-installing-linux-mint-in-uefi-mode/
+How I got there:
+  Researched which flavour of Linux to go with.</description>
     </item>
     
   </channel>

@@ -13,10 +13,10 @@
     
     <item>
       <title>NOTES: Troubles Running/Linking Javascript in Hugo...</title>
-      <link>https://defsax.github.io/posts/feb7/</link>
+      <link>https://defsax.github.io/posts/feb0720/</link>
       <pubDate>Fri, 07 Feb 2020 17:16:00 -0400</pubDate>
       
-      <guid>https://defsax.github.io/posts/feb7/</guid>
+      <guid>https://defsax.github.io/posts/feb0720/</guid>
       <description>Overrode theme&amp;rsquo;s head.html partial in order to add my own css and js files. Getting error on attempting to onload=&amp;quot;start()&amp;rdquo; in baseof.html:
 The resource from “http://localhost:1313/projects/js/titlescript.js” was blocked due to MIME type (“text/plain”) mismatch (X-Content-Type-Options: nosniff).  It&amp;rsquo;d appear that the server is trying to load the script from the wrong directory. Changing the load directory in the &amp;lt;script&amp;gt; tag worked for titlescript.js but not scramble.js
 Error claims that the script was blocked due to MIME type (&amp;ldquo;text/plain&amp;rdquo;) mismatch, but I&amp;rsquo;ve explicitly set type=&amp;quot;application/javascript&amp;rdquo;&amp;hellip;</description>
