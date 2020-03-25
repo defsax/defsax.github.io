@@ -240,6 +240,9 @@
         <strong aria-hidden="true">Publish date: </strong>Mar 25, 2020
         
           
+            <br>
+            <strong aria-hidden="true">Last updated: </strong>Mar 25, 2020
+          
         
       </div>
 
@@ -292,9 +295,9 @@
         </div>
       
       
-      <p>I had a problem. I love music, and I love techonology, but not big brother. Shouldn&rsquo;t tech be responsible, free (as in freedom), and in our hands? Mustn&rsquo;t there be a way to bring audio in on the cheap without the big G smuggling itself in as well? I thought. And this was my dissonance. The desire to implement <del>the Google Home ecosystem</del> cheap and seamless wireless audio and (maybe) smart assistant, and a healthy dose of paranoia <a href="https://www.nytimes.com/interactive/2019/opinion/internet-privacy-project.html">(toss a stone and find dozens of articles)</a>.</p>
+      <p>I had a problem. I love music, and I love techonology, but not Big Brother. Shouldn&rsquo;t tech be responsible, free (as in freedom), and in our hands? Mustn&rsquo;t there be a way to bring audio in on the cheap without the big G smuggling itself in as well? I did some thinking. This was my dissonance. The desire to implement <del>the Google Home ecosystem</del> cheap and seamless wireless audio and (maybe) smart assistant, and a healthy dose of paranoia <a href="https://www.nytimes.com/interactive/2019/opinion/internet-privacy-project.html">(toss a stone and find dozens of articles)</a>.</p>
 <p>I went ahead and decided to reconcile the two. The Google Home Mini is an excellent middle ground between dollar store bluetooth speaker and entry level Sonos or IKEA smart speaker. They&rsquo;re cheap, probably due to Spotify&rsquo;s giveaway promo (~$20 on <a href="https://www.kijiji.ca/">kijiji</a>), ubiquitous, and can be painlessly controlled via centralized app once on wifi.
-So partly out of principle aided paranoia, and partly out of curiosity, I acquired a few Google Home Minis and set out to remove the microphones. As an added bonus, I thought, I could check to see whether the switch was indeed a &ldquo;hardware switch&rdquo; as google <a href="https://support.google.com/googlenest/thread/24537110?hl=en">claimed</a> it is.</p>
+So partly out of principle, partly out of paranoia, and partly out of curiosity, I acquired a few Google Home Minis and set out to remove the microphones. As an added bonus, I thought, I could check to see whether the switch was indeed a &ldquo;hardware switch&rdquo; as google <a href="https://support.google.com/googlenest/thread/24537110?hl=en">claimed</a> it is.</p>
 <p>(Result: inconclusive. More later.)</p>
 <p>The teardown of this device is not difficult, but I checked in with <a href="https://www.ifixit.com/Teardown/Google+Home+Mini+Teardown/102264">ifixit</a> just in case. Right off the bat I could not get under the orange rubber with a spudger. A heat gun is far more effective. I just blasted it at 300℃ until the rubber just puckered and popped right off.</p>
 <p><img src="/images/ghhack/baserm.jpg" alt="alt text" title="Orange rubber base removal"></p>
@@ -322,7 +325,7 @@ So partly out of principle aided paranoia, and partly out of curiosity, I acquir
 <p><img src="/images/ghhack/ghmic.jpg" alt="alt text" title="Contacts."></p>
 <p>The mic receives 3.3v whether the switch is in the &ldquo;on&rdquo; or &ldquo;muted&rdquo; position. A hardware switch would cut voltage to the microphones, right? I&rsquo;m no electrical engineer but I imagine one answer is likely: not necessarily.</p>
 <p><img src="/images/ghhack/switchon.jpg" alt="alt text" title="Switch on, mic gone"></p>
-<p>The orange lights and &ldquo;the mic is off&rdquo; message that appear when the switch is in the &ldquo;mute&rdquo; position began to appear after (mic removal) with the switch in either position. Without completely reverse engineering the device, I can only assume that the mechanism responsible for detecting mic muting detects a voltage drop somewhere in the mic circuit, and not necessarily at the mic itself. The switch could affect the circuit voltage between mic gnd and gnd, then triggering logic to activate the <del>turn me on</del> &ldquo;mic is off&rdquo; message. Although, if that were the case, we still wouldn&rsquo;t see voltage, would we? If anyone has answers, please reach out to me.)</p>
+<p>The orange lights and &ldquo;the mic is off&rdquo; message that appear when the switch is in the &ldquo;mute&rdquo; position began to appear after (mic removal) with the switch in either position. Without completely reverse engineering the device, I can only assume that the mechanism responsible for detecting mic muting detects a voltage drop somewhere in the mic circuit, and not necessarily at the mic itself. The switch could affect the circuit voltage between mic gnd and gnd, then triggering logic to activate the <del>turn me on</del> &ldquo;mic is off&rdquo; message. Although, if that were the case, we still wouldn&rsquo;t see voltage, would we? If anyone has answers, please reach out to me.</p>
 
     
     
