@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>diwhy on Perry Defayette</title>
-    <link>https://defsax.github.io/tags/diwhy/</link>
+    <link>https://perrydefayette.dev/tags/diwhy/</link>
     <description>Recent content in diwhy on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Mar 2020 11:53:22 -0400</lastBuildDate>
     
-	<atom:link href="https://defsax.github.io/tags/diwhy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://perrydefayette.dev/tags/diwhy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hack: Removing Google Home Mini Microphones</title>
-      <link>https://defsax.github.io/posts/ghhack/</link>
+      <link>https://perrydefayette.dev/posts/ghhack/</link>
       <pubDate>Wed, 25 Mar 2020 11:53:22 -0400</pubDate>
       
-      <guid>https://defsax.github.io/posts/ghhack/</guid>
+      <guid>https://perrydefayette.dev/posts/ghhack/</guid>
       <description>I had a problem. I love music, and I love techonology, but not Big Brother. Shouldn&amp;rsquo;t tech be responsible, free (as in freedom), and in our hands? Mustn&amp;rsquo;t there be a way to bring audio in on the cheap without the big G smuggling itself in as well? I did some thinking. This was my dissonance. The desire to implement the Google Home ecosystem cheap and seamless wireless audio and (maybe) smart assistant, and a healthy dose of paranoia (toss a stone and find dozens of articles).</description>
     </item>
     

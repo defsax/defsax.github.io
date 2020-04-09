@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Perry Defayette</title>
-    <link>https://defsax.github.io/tags/linux/</link>
+    <link>https://perrydefayette.dev/tags/linux/</link>
     <description>Recent content in linux on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jan 2020 15:33:36 -0500</lastBuildDate>
     
-	<atom:link href="https://defsax.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://perrydefayette.dev/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Linux on Thinkpad X120e</title>
-      <link>https://defsax.github.io/posts/jan2920/</link>
+      <link>https://perrydefayette.dev/posts/jan2920/</link>
       <pubDate>Wed, 29 Jan 2020 15:33:36 -0500</pubDate>
       
-      <guid>https://defsax.github.io/posts/jan2920/</guid>
+      <guid>https://perrydefayette.dev/posts/jan2920/</guid>
       <description>Solution:
 When installing any linux flavour that uses Calamares to Thinkpad X120e, flash USB with rufus. Set partition scheme to MBR and target system to BIOS or UEFI. In the BIOS config settings in the laptop, set UEFI/Legacy Boot to Both, and set UEFI/Legacy Boot Priority to Legacy First. Uncheck install third party software and choose Erase disk and install.
 https://www.learningpenguin.net/2018/07/13/fix-grub-efi-amd64-signed-package-failed-to-install-into-target/

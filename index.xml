@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>welcome... on Perry Defayette</title>
-    <link>https://defsax.github.io/</link>
+    <link>https://perrydefayette.dev/</link>
     <description>Recent content in welcome... on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Feb 2020 10:50:35 -0500</lastBuildDate>
     
-	<atom:link href="https://defsax.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://perrydefayette.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hack: Removing Google Home Mini Microphones</title>
-      <link>https://defsax.github.io/posts/ghhack/</link>
+      <link>https://perrydefayette.dev/posts/ghhack/</link>
       <pubDate>Wed, 25 Mar 2020 11:53:22 -0400</pubDate>
       
-      <guid>https://defsax.github.io/posts/ghhack/</guid>
+      <guid>https://perrydefayette.dev/posts/ghhack/</guid>
       <description>I had a problem. I love music, and I love techonology, but not Big Brother. Shouldn&amp;rsquo;t tech be responsible, free (as in freedom), and in our hands? Mustn&amp;rsquo;t there be a way to bring audio in on the cheap without the big G smuggling itself in as well? I did some thinking. This was my dissonance. The desire to implement the Google Home ecosystem cheap and seamless wireless audio and (maybe) smart assistant, and a healthy dose of paranoia (toss a stone and find dozens of articles).</description>
     </item>
     
     <item>
       <title>Creating a Web Worker in Codepen</title>
-      <link>https://defsax.github.io/posts/codepenwebworker/</link>
+      <link>https://perrydefayette.dev/posts/codepenwebworker/</link>
       <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
       
-      <guid>https://defsax.github.io/posts/codepenwebworker/</guid>
+      <guid>https://perrydefayette.dev/posts/codepenwebworker/</guid>
       <description>In trying to find a way to integrate javascript projects into this blog without loading special seperate css and js files into my markdown, I came across some built-in hugo shortcode for codepen. After some tinkering I was able to embed codepen projects right into my markdown using just the slug
 (as in: {{&amp;lt;codePen xxxxxxx&amp;gt;}}).
 However I then ran into the issue of trying to load any generic worker.js file to get a web worker running.</description>
@@ -33,10 +33,10 @@ However I then ran into the issue of trying to load any generic worker.js file t
     
     <item>
       <title>Letterscrambler</title>
-      <link>https://defsax.github.io/projects/letterscrambler/</link>
+      <link>https://perrydefayette.dev/projects/letterscrambler/</link>
       <pubDate>Tue, 11 Feb 2020 15:40:38 -0500</pubDate>
       
-      <guid>https://defsax.github.io/projects/letterscrambler/</guid>
+      <guid>https://perrydefayette.dev/projects/letterscrambler/</guid>
       <description>&amp;hellip;For lack of a better title.
 This application takes some user input, checks letter validity against a pre-written array of characters (so that the worker doesn&amp;rsquo;t run forever), then summons a web worker to randomly cycle the letters until the user word/phrase is found. You can control the worker delay using the slider input.
 On github.
@@ -45,10 +45,10 @@ See the Pen Letter Scrambler by Perry (@defsax) on CodePen.  The user enters the
     
     <item>
       <title>NOTES: Troubles Running/Linking Javascript in Hugo...</title>
-      <link>https://defsax.github.io/posts/feb0720/</link>
+      <link>https://perrydefayette.dev/posts/feb0720/</link>
       <pubDate>Fri, 07 Feb 2020 17:16:00 -0400</pubDate>
       
-      <guid>https://defsax.github.io/posts/feb0720/</guid>
+      <guid>https://perrydefayette.dev/posts/feb0720/</guid>
       <description>Overrode theme&amp;rsquo;s head.html partial in order to add my own css and js files. Getting error on attempting to onload=&amp;quot;start()&amp;rdquo; in baseof.html:
 The resource from “http://localhost:1313/projects/js/titlescript.js” was blocked due to MIME type (“text/plain”) mismatch (X-Content-Type-Options: nosniff).  It&amp;rsquo;d appear that the server is trying to load the script from the wrong directory. Changing the load directory in the &amp;lt;script&amp;gt; tag worked for titlescript.js but not scramble.js
 Error claims that the script was blocked due to MIME type (&amp;ldquo;text/plain&amp;rdquo;) mismatch, but I&amp;rsquo;ve explicitly set type=&amp;quot;application/javascript&amp;rdquo;&amp;hellip;</description>
@@ -56,19 +56,19 @@ Error claims that the script was blocked due to MIME type (&amp;ldquo;text/plain
     
     <item>
       <title>about</title>
-      <link>https://defsax.github.io/about/</link>
+      <link>https://perrydefayette.dev/about/</link>
       <pubDate>Wed, 05 Feb 2020 10:50:35 -0500</pubDate>
       
-      <guid>https://defsax.github.io/about/</guid>
+      <guid>https://perrydefayette.dev/about/</guid>
       <description>My name is Perry Defayette. Whether a code or hardware project, I enjoy tinkering, design and diy. This blog is intended as equal parts portfolio, dev blog, and film blog (sometimes).</description>
     </item>
     
     <item>
       <title>Installing Linux on Thinkpad X120e</title>
-      <link>https://defsax.github.io/posts/jan2920/</link>
+      <link>https://perrydefayette.dev/posts/jan2920/</link>
       <pubDate>Wed, 29 Jan 2020 15:33:36 -0500</pubDate>
       
-      <guid>https://defsax.github.io/posts/jan2920/</guid>
+      <guid>https://perrydefayette.dev/posts/jan2920/</guid>
       <description>Solution:
 When installing any linux flavour that uses Calamares to Thinkpad X120e, flash USB with rufus. Set partition scheme to MBR and target system to BIOS or UEFI. In the BIOS config settings in the laptop, set UEFI/Legacy Boot to Both, and set UEFI/Legacy Boot Priority to Legacy First. Uncheck install third party software and choose Erase disk and install.
 https://www.learningpenguin.net/2018/07/13/fix-grub-efi-amd64-signed-package-failed-to-install-into-target/
