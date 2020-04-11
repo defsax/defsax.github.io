@@ -6,10 +6,19 @@
     <description>Recent content in javascript on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2020 15:33:36 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 11:08:31 -0400</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fetching an RSS Feed (Without a Library)</title>
+      <link>https://perrydefayette.dev/posts/addingrss/</link>
+      <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/posts/addingrss/</guid>
+      <description>Here&amp;rsquo;s a feeble attempt to stay up to date with the news without actually reading it (that&amp;rsquo;s what people do, right?) I wanted to write something that grabbed headlines from different sources to display overtop of another project I was working on. A little research turned up RSS(Really Simple Syndication) feeds in all their 2000&amp;rsquo;s glory. I dug around some more and looked for ways to encorporate them. This was actually a little more difficult than I&amp;rsquo;d originally thought.</description>
+    </item>
     
     <item>
       <title>Creating a Web Worker in Codepen</title>

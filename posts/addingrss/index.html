@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="https://perrydefayette.dev/tags/google-home/">
+  <link rel="canonical" href="https://perrydefayette.dev/posts/addingrss/">
 
   
 
@@ -35,7 +35,7 @@
 
   
   
-  <title>google home | Perry Defayette</title>
+  <title>Fetching an RSS Feed (Without a Library) | Perry Defayette</title>
 </head>
 
   <style>
@@ -46,7 +46,7 @@
       padding-bottom: 2.25rem;
     }
   </style>
-  <body onload="start(&#34;google home&#34;)">
+  <body onload="start(&#34;Fetching an RSS Feed (Without a Library)&#34;)">
     <a href="#main">skip to content</a>
     <svg style="display: none">
   <symbol id="bookmark" viewBox="0 0 40 50">
@@ -231,149 +231,123 @@
         <div>
           
   <main id="main">
-    <h1 id="title">google home</h1>
+    <h1 id="title">Fetching an RSS Feed (Without a Library)</h1>
     
-    <ul class="patterns-list">
     
-      <li>
-        <h2>
-          <a href="https://perrydefayette.dev/posts/ghhack/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Hack: Removing Google Home Mini Microphones
-          </a>
-        </h2>
-      </li>        
+      <div class="date">
+        
+        
+        <strong aria-hidden="true">Publish date: </strong>Apr 9, 2020
+        
+          
+            <br>
+            <strong aria-hidden="true">Last updated: </strong>Apr 9, 2020
+          
+        
+      </div>
+
+      
+        <div class="tags">
+          <strong aria-hidden="true">Tags: </strong>
+          <ul aria-label="tags">
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://perrydefayette.dev/tags/rss/">RSS</a>
+              </li>
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://perrydefayette.dev/tags/xml/">XML</a>
+              </li>
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://perrydefayette.dev/tags/javascript/">javascript</a>
+              </li>
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://perrydefayette.dev/tags/front-end/">front-end</a>
+              </li>
+            
+              <li>
+                <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                  <use xlink:href="#tag"></use>
+                </svg>
+                
+                <a href="https://perrydefayette.dev/tags/news/">news</a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      
+      <p>Here&rsquo;s a feeble attempt to stay up to date with the news without actually reading it (that&rsquo;s what people do, right?) I wanted to write something that grabbed headlines from different sources to display overtop of another project I was working on. A little research turned up RSS(Really Simple Syndication) feeds in all their 2000&rsquo;s glory. I dug around some more and looked for ways to encorporate them. This was actually a little more difficult than I&rsquo;d originally thought. Google Feed API was deprecated in 2015. Yahoo! Query Language, another tool used to retrieve data through a single web interface, was retired last year. How easy would this have been&hellip;</p>
+<p><code>select title, link from rss where url = 'https://www.news-site.com/rss.xml'</code></p>
+<p>Eventually I discovered two built in javascript APIs for retrieving data for this use case (are there more?): one older and one newer.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch</a> both allow you to issue HTTP requests for exchanging data over the web.</p>
+<p>Starting out I was able to use fetch to request the xml from the <em>nytimes</em> with little hacking to get it to work. Fetch uses a &lsquo;promise&rsquo; and &lsquo;response&rsquo; system. It takes the path of the desired resource and returns a &lsquo;promise&rsquo; that resolves to a &lsquo;response&rsquo; stream once it is available. The &lsquo;response&rsquo; stream returns whether the fetch fails or not, so it&rsquo;s necessary to error check the response.</p>
+<pre><code class="language-javascript">fetch('/path/to/resource')
+  .then((response) =&gt; {
+    //fetch doesn't reject on http errors, so check that it's okay
+    if(response.ok){
+      //do stuff with the response
+    }
+  })
+</code></pre>
+<p>Once the fetch returns and everything is good to go, there are multiple ways to deal with the data. I return it using the body.text() method, which returns string data. That string can then be parsed using the DOMParser interface, turning the raw XML into more managable pieces, which can in turn be looped through while querying our relevant information. For my purposes I only wanted the titles and the links to the articles. Easy enough.</p>
+<pre><code class="language-javascript">const DOMPARSER = new DOMParser();
+response.text().then((xmlTEXT) =&gt;{
+  try{
+    let doc = DOMPARSER.parseFromString(xmlTEXT, &quot;text/xml&quot;);
+    doc.querySelectorAll('item').forEach((item) =&gt; {
+      var title = item.querySelector('title').textContent;
+      var link = item.querySelector('link').textContent;
+      myHeadlineArray.push({&quot;title&quot;: title, &quot;link&quot;: link});
+    })
+  }catch(e){ console.error(&quot;Error in parsing feed.&quot;); }
+})
+</code></pre>
+<p>DOMPARSER takes the name of the DOMString containing the information to be parsed as well as the return type of the method. Then each item returned by the parser captures the title and link values using querySelector(), which returns the first instance of an descendent element found in the DOM document. The final step is to push those newly returned headlines into an array that is eventually passed back to be randomized and displayed!</p>
+<p>The Fetch() approach worked perfectly for the <em>nytimes&rsquo;</em> xml, but when I went to query other rss feeds from other news sources, I ran into <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> errors. Basically, any HTTP request for data must request that data from the same origin (such as the origin&rsquo;s server). So mydomain.com cannot request a resource from yourdomain.com unless you have given explicit permission to mydomain.com, or set the appropriate CORS header to give (public) permission for access. If the pre-flight request for data is blocked, then the client&rsquo;s browser comes back and throws the CORS error. I assume that the <em>nytimes</em> has enabled CORS for all requests, and I set out to find a different solution for other news outlets (you don&rsquo;t get your news from just one source, do you?)</p>
+<p>At this point I found that I could take one of multiple routes. There&rsquo;s a browser plugin that allows you to send cross-domain requests. This might be fine in a development context, but can&rsquo;t be expected to work for everyone that visits the site without that plugin installed. I know that another way to do this would be to make periodic requests to the rss locations from my server, cache the results, then query the backend instead of the news sites directly. However since I&rsquo;m making a proof-of-concept and hosting on Github pages, which allows static hosting for free with no backend, I needed to find a different option.</p>
+<p>There are proxies that can be used for this exact function. They act as a kind of middleware between the client browser and the desired resource. I discovered <a href="https://rss2json.com/">rss2json</a> and an open source CORS proxy project called <a href="https://github.com/Rob--W/cors-anywhere">CORS Anywhere</a>. I&rsquo;m sure there are many more. Anyway, rss2json is fine for this project, so I plugged the api url into my project and it worked! There are some limitations for rss2json (pay for more frequent updates, more requests, and more feeds) but I don&rsquo;t anticipate that using the free tier will be an issue for this blog.</p>
+<pre><code class="language-javascript">const apiURL = 'https://api.rss2json.com/v1/api.json?rss_url=';
+function getNews(url){
+  var encodedURL = apiURL + encodeURIComponent(url);
+  fetch(encodedURL){
+    //process fetch as usual
+  }
+}
+</code></pre>
+<p>The rss2json proxy requires that the site url be encoded hence the encodeURIComponent call. A limitation of this approach is that rss2json obviously only returns json data whereas fetching the <em>nytimes</em> (which didn&rsquo;t require a proxy) returns the whole XML DOM tree. This makes processing the return values seperate and therefore annoying:</p>
+<pre><code class="language-javascript">if(siteURL.indexOf('nytimes') === -1){ //This is not the new york times.');
+  response.json().then((data) =&gt; {
+    //process this data as a json
+  })
+}else{
+  response.text().then((data) =&gt; {
+    //process this data in xml text form
+  })
+</code></pre>
+<p>Sloppy but it works.</p>
+
     
-    </ul>
+    
   </main>
-  
-    <ul> 
-    
-      
-        <li id="list_item"> 
-
-        <a href="/tags/codepen/" id="list_link">
-          (1) codepen
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/diwhy/" id="list_link">
-          (1) diwhy
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/diy/" id="list_link">
-          (1) diy
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/front-end/" id="list_link">
-          (1) front-end
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/google-home/" id="list_link">
-          (1) google home
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/hack/" id="list_link">
-          (1) hack
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/html/" id="list_link">
-          (1) html
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/hugo/" id="list_link">
-          (1) hugo
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/javascript/" id="list_link">
-          (4) javascript
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/linux/" id="list_link">
-          (1) linux
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/lubuntu/" id="list_link">
-          (1) lubuntu
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/microphone/" id="list_link">
-          (1) microphone
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/news/" id="list_link">
-          (1) news
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/rss/" id="list_link">
-          (1) RSS
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/thinkpad/" id="list_link">
-          (1) thinkpad
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/web/" id="list_link">
-          (2) web
-        </a>
-        </li> 
-      
-        <li id="list_item"> 
-
-        <a href="/tags/xml/" id="list_link">
-          (1) XML
-        </a>
-        </li> 
-      
-    
-  </ul>
-  
             
           <footer role="contentinfo">
   <div>

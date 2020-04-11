@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perrydefayette.dev/posts/addingrss/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/front-end/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/javascript/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/news/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/rss/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/xml/</loc>
+    <lastmod>2020-04-09T18:14:40-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perrydefayette.dev/tags/diwhy/</loc>
     <lastmod>2020-03-25T16:35:21-04:00</lastmod>
   </url>
@@ -33,11 +68,6 @@
   </url>
   
   <url>
-    <loc>https://perrydefayette.dev/tags/</loc>
-    <lastmod>2020-03-25T16:35:21-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://perrydefayette.dev/tags/codepen/</loc>
     <lastmod>2020-03-10T13:10:56-04:00</lastmod>
   </url>
@@ -45,11 +75,6 @@
   <url>
     <loc>https://perrydefayette.dev/posts/codepenwebworker/</loc>
     <lastmod>2020-03-10T13:10:56-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/javascript/</loc>
-    <lastmod>2020-03-11T22:06:52-04:00</lastmod>
   </url>
   
   <url>
