@@ -30,3 +30,10 @@
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
+
+img {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  display: block;
+}
