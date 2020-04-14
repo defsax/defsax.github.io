@@ -24,6 +24,11 @@
   margin: auto;
   animation: rotate 17.5s linear infinite;
 }
+.banner-crop{
+  max-height: 140px;
+  overflow: hidden;
+  
+}
 
 @keyframes rotate{
   to{
@@ -37,3 +42,5 @@ img {
   height: auto;
   display: block;
 }
+
+
