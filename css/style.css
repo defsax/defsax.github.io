@@ -27,7 +27,8 @@
 .banner-crop{
   max-height: 140px;
   overflow: hidden;
-  
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 @keyframes rotate{

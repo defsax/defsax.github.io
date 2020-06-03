@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perrydefayette.dev/posts/headlinebreakout/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/css/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/game/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/html/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/javascript/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/rss/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/</loc>
+    <lastmod>2020-06-03T02:04:13-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perrydefayette.dev/posts/addingrss/</loc>
     <lastmod>2020-04-10T20:36:27-04:00</lastmod>
   </url>
@@ -13,27 +48,7 @@
   </url>
   
   <url>
-    <loc>https://perrydefayette.dev/tags/html/</loc>
-    <lastmod>2020-04-10T20:36:27-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/javascript/</loc>
-    <lastmod>2020-04-10T20:36:27-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://perrydefayette.dev/tags/news/</loc>
-    <lastmod>2020-04-10T20:36:27-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/rss/</loc>
-    <lastmod>2020-04-10T20:36:27-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/</loc>
     <lastmod>2020-04-10T20:36:27-04:00</lastmod>
   </url>
   

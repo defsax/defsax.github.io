@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2020 11:08:31 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 19:44:52 -0400</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>css</title>
+      <link>https://perrydefayette.dev/tags/css/</link>
+      <pubDate>Fri, 29 May 2020 19:44:52 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://perrydefayette.dev/tags/game/</link>
+      <pubDate>Fri, 29 May 2020 19:44:52 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://perrydefayette.dev/tags/html/</link>
+      <pubDate>Fri, 29 May 2020 19:44:52 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://perrydefayette.dev/tags/javascript/</link>
+      <pubDate>Fri, 29 May 2020 19:44:52 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSS</title>
+      <link>https://perrydefayette.dev/tags/rss/</link>
+      <pubDate>Fri, 29 May 2020 19:44:52 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/rss/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>front-end</title>
@@ -21,38 +66,11 @@
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://perrydefayette.dev/tags/html/</link>
-      <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://perrydefayette.dev/tags/javascript/</link>
-      <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>news</title>
       <link>https://perrydefayette.dev/tags/news/</link>
       <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
       
       <guid>https://perrydefayette.dev/tags/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RSS</title>
-      <link>https://perrydefayette.dev/tags/rss/</link>
-      <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/rss/</guid>
       <description></description>
     </item>
     
