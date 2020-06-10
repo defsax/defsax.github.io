@@ -1,0 +1,103 @@
+/*style the buttons that are used to open and close the accordio*/
+.accordo{
+  color: white;
+  cursor: pointer;
+  padding: 1px;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+/*style the accordion panel, note: hidden by default*/
+.panel{
+  padding: 0 18px;
+  background-color: rgba(0, 0, 0, 0.1 );
+  display: none;
+  overflow: hidden;
+}
+#hitem{
+  border-top: 1px solid white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/*the overlay*/
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0); /*fallback color?*/
+  background-color: rgba(0, 0, 0, 0.7); /*with opacity*/
+  overflow-x: hidden; /*disable horizontal scroll*/  
+}
+
+/*position the content inside the overlay*/
+.overlay-content{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*the nav links inside the overlay*/
+.overlay a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/*mouseover effects*/
+.overlay a:hover .overlay a:focus{
+  color: #f1f1f1;
+}
+/*position the close button*/
+.overlay .closebtn {
+  position: absolute;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+}
+#closer{
+  position: fixed;
+  z-index: 5;
+}
+
+.openbtn {
+  position: absolute;
+  padding: 10px;
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 1;
+  color: #818181;
+}
+
+/*when the screen size is small, shrink the font-size*/
+@media screen and (max-height: 450px){
+  .overlay a {font-size: 20px;}
+  .overlay .closebtn{
+    font-size: 80px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .overlay button {font-size: 20px;}
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,51 @@
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Breakout Canvas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link rel="stylesheet" href="/demos/headline-breakout/reset.css">
+    <link rel="stylesheet" href="/demos/headline-breakout/style.css">
+    <link rel="stylesheet" href="/demos/headline-breakout/curtain-style.css">
+    
+    <!--modules-->
+    <script src="/demos/headline-breakout/rss.js" type="text/javascript"></script>
+    <script src="/demos/headline-breakout/modifier.js" type="text/javascript"></script>
+  </head>
+  
+  <body>   
+    <!--the overlay itself-->
+    <div id="nav-bar" class="overlay">
+      <!--button to close the overlay nav-->
+      <a href="javascript:void(0)" id="closer" class="closebtn">&times;</a>
+      
+      <!--overlay content-->
+      <div class="overlay-content">
+        <a href="https://perrydefayette.dev/">HOME</a>
+        <a href="https://perrydefayette.dev/posts/headlinebreakout/">ABOUT</a>
+        <button class="accordo">HEADLINES</button>
+        <div class="panel" id="hlines"></div>
+        <a href=".">RESTART</a>
+      </div>
+    </div>
+    
+    <!--hamburger button-->
+    <span>
+      <a href="javascript:void(0)" id="opener" class="openbtn">&#9776;</a>
+    </span>  
+  
+    <!--placeholder for title text/reset button-->
+    <div class="container">
+      <a id="title" target="_blank">SPACE / RELEASE TO START</a>
+      <h1 id="gameOver">GAME OVER</h1>
+      <button id="resButton">REPLAY</button>
+    </div>
+   
+    <canvas id="myCanvas"></canvas> 
+    <script src="/demos/headline-breakout/main.js" type="module"></script>
+   
+  </body>
+</html>
+

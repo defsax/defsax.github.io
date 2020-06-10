@@ -6,10 +6,19 @@
     <description>Recent content in game on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 May 2020 19:44:52 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 02:48:29 -0400</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/game/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Game: Breakout the Headlines!</title>
+      <link>https://perrydefayette.dev/projects/headline-breakout/</link>
+      <pubDate>Wed, 10 Jun 2020 02:48:29 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/projects/headline-breakout/</guid>
+      <description>  JS Breakout Canvas      &amp;times; HOME ABOUT HEADLINES  RESTART    &amp;#9776;  SPACE / RELEASE TO START GAME OVER REPLAY      </description>
+    </item>
     
     <item>
       <title>Breakout: An RSS Reader...</title>
