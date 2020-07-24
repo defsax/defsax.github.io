@@ -241,7 +241,7 @@
         
           
             <br>
-            <strong aria-hidden="true">Last updated: </strong>Jul 21, 2020
+            <strong aria-hidden="true">Last updated: </strong>Jul 24, 2020
           
         
       </div> 
@@ -328,7 +328,7 @@
       
       
       <p>There&rsquo;s a little executable in the quasi console driven &ldquo;hacking&rdquo; game Hacknet. If you run hexclock.exe in the game, a small widget appears and changes your HUD&rsquo;s colour according to the in-game time.</p>
-<p>So what did it take to make a web version of the hexclock? I quickly realized that most/all of the single-page &ldquo;hexclock&rdquo; apps that I found were variations of setting the colour value of the background using hexidecimal. I learned that there&rsquo;s a difference between that and actual &ldquo;hextime&rdquo;, which is what I started out thinking all of this was. I made an implementation of both: a 24-hour colour-changing &ldquo;hexclock&rdquo; <a href="http://www.jacopocolo.com/hexclock/">like this one</a>, and a &ldquo;hextime&rdquo; colour-changing &ldquo;hexclock&rdquo;.</p>
+<p>So what did it take to make a web version of the hexclock? I quickly realized that most/all of the single-page &ldquo;hexclock&rdquo; apps that I found were variations of setting the colour value of the background using hexadecimal. I learned that there&rsquo;s a difference between that and actual &ldquo;hextime&rdquo;, which is what I started out thinking all of this was. I made an implementation of both: a 24-hour colour-changing &ldquo;hexclock&rdquo; <a href="http://www.jacopocolo.com/hexclock/">like this one</a>, and a &ldquo;hextime&rdquo; colour-changing &ldquo;hexclock&rdquo;.</p>
 <p><a href="https://perrydefayette.dev/projects/hexclock/">THE RESULT</a> (Requires javascript)</p>
 <p>In both implementations, the colour values are set the same way. Basically, I get the current time and set the colour accordingly. The first way uses the 24-hour clock: hours for red, minutes for green, and seconds for blue. For example: 12:37:21 would be #123721. This version of the clock only uses base 10 values.</p>
 <pre><code class="language-javascript">//Get the time
@@ -350,9 +350,9 @@ if(s.length &lt; 2)
 //Set background color using time
 background.style.backgroundColor = &quot;#&quot; + h + m + s;
 </code></pre>
-<p>By far the harder part of this was figuring out how to convert to hextime. As far as I know Javascript doesn&rsquo;t have a feature for fetching hextime the way that the Date() object fetches standard time. My naive solution was to just use the <em>num</em>.toString() method on the current time, and pass it 16 in order to covert the value to hexidecimal. But obviously this just displays the current base ten 24 hour time in hex. I needed a way to actually convert the current time of day from standard time to hex time, then set the colour value.</p>
-<p>Another naive solution was to convert each hour/minute/second using <a href="http://www.intuitor.com/hex/hexclock.html">the conversion information on this site</a>. But this again does not account for the structural differences in how each time frame measures a day. According to intuitor.com, hextime evaluates a day as a hexidecimal fraction. Midnight is expressed as .000000, while 11:59PM would be expressed as .FFFFFF. Noon would be .800000.</p>
-<p>The application needed to mark a point along the axis of the entirety of a day. Both hextime and standard time loop at the start of a new day, so I started there and worked backwards. There are 86400 seconds in a day. Using this range information, I fetch the number of seconds since midnight, and then normalize the value using the seconds range and the hexidecimal range. The hexidecimal range can be any number of values, since a day is always measured in multiples of 16, and just depends on desired resolution (ie. .FFFF, .FFFFF, .FFFFFF). For simplicity&rsquo;s sake, I take the decimal value of the top end of the hexidecimal range and convert it into hex after the calculations:</p>
+<p>By far the harder part of this was figuring out how to convert to hextime. As far as I know Javascript doesn&rsquo;t have a feature for fetching hextime the way that the Date() object fetches standard time. My naive solution was to just use the <em>num</em>.toString() method on the current time, and pass it 16 in order to convert the value to hexadecimal. But obviously this just displays the current base ten 24 hour time in hex. I needed a way to actually convert the current time of day from standard time to hex time, then set the colour value.</p>
+<p>Another naive solution was to convert each hour/minute/second using <a href="http://www.intuitor.com/hex/hexclock.html">the conversion information on this site</a>. However, this again does not account for the structural differences in how each time frame measures a day. According to intuitor.com, hextime evaluates a day as a hexadecimal fraction. For instance, midnight is expressed as .000000, 11:59PM would be expressed as .FFFFFF, and noon would be .800000.</p>
+<p>The application needed to mark a point along the axis of the entirety of a day. Both hextime and standard time loop at the start of a new day, so I started there and worked backwards. There are 86400 seconds in a day. Using this range information, I fetch the number of seconds since midnight, and then normalize the value using the seconds range and the hexadecimal range. The hexadecimal range can be any number of values, since a day is always measured in multiples of 16, and just depends on desired resolution (ie. .FFFF, .FFFFF, .FFFFFF). For simplicity&rsquo;s sake, I take the decimal value of the top end of the hexadecimal range and convert it into hex after the calculations:</p>
 <p>.FFFF: 65535<br>
 .FFFFF: 1048575<br>
 .FFFFFF: 16777215<br></p>
@@ -360,7 +360,7 @@ background.style.backgroundColor = &quot;#&quot; + h + m + s;
 <p>result = (b - a) * (x - min(x) / max(x) - min(x)) + a</p>
 <p><strong>where</strong></p>
 <p>x: <br>seconds since midnight<br><br>
-[a,b]: <br>range of (hexidecimal) time in a day<br><br>
+[a,b]: <br>range of (hexadecimal) time in a day<br><br>
 [min(x), max(x)]: <br>range of (standard) seconds in day<br><br></p>
 <p>Put all together:</p>
 <pre><code class="language-javascript">function hexClock(){
@@ -402,6 +402,7 @@ function normalize(x, inRange, outRange){
   return Math.round(normalized);
 }
 </code></pre>
+<p>All said, I will say that hextime does not produce the most digestable colour palette.</p>
 
     
     
