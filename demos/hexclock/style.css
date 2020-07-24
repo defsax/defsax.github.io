@@ -1,0 +1,77 @@
+.centre{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button{
+  border: none;
+  text-decoration: none;
+  display: block;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+  transition: 0.3s;
+  padding: 10px;
+}
+.button:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+.btns{
+  margin-left: auto;
+  margin-right: 0;
+  float: right;
+  right: 0px;
+}
+
+#decimal{
+  border-radius: 0 10px 0 0;
+  padding-bottom: 5px;
+}
+#hexi{
+  border-radius: 0 0 10px 0;
+  padding-top: 5px;
+}
+
+#time{
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: left;
+  padding: 10px 0px 0px 25px;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(50%);
+}
+#menu{
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  width: 50%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px){
+  .button{
+    display: inline;
+  }
+  .btns{
+    float: none;
+  }
+  #time{
+    position: static;
+    margin: auto;
+    padding: 0 10vw 0 10vw;
+  }
+  #menu{
+    padding-left: 0;
+    width: 60%;
+  }
+  #decimal, #hexi{
+    border-radius: 0;
+    padding: 10px;
+    margin: 35px 5px 5px 5px;
+  }
+}
