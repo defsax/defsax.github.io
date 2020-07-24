@@ -329,7 +329,7 @@
       
       <p>There&rsquo;s a little executable in the quasi console driven &ldquo;hacking&rdquo; game Hacknet. If you run hexclock.exe in the game, a small widget appears and changes your HUD&rsquo;s colour according to the in-game time.</p>
 <p>So what did it take to make a web version of the hexclock? I quickly realized that most/all of the single-page &ldquo;hexclock&rdquo; apps that I found were variations of setting the colour value of the background using hexidecimal. I learned that there&rsquo;s a difference between that and actual &ldquo;hextime&rdquo;, which is what I started out thinking all of this was. I made an implementation of both: a 24-hour colour-changing &ldquo;hexclock&rdquo; <a href="http://www.jacopocolo.com/hexclock/">like this one</a>, and a &ldquo;hextime&rdquo; colour-changing &ldquo;hexclock&rdquo;.</p>
-<p><a href="http://https://perrydefayette.dev/projects/hexclock/">THE RESULT</a> (Requires javascript)</p>
+<p><a href="https://perrydefayette.dev/projects/hexclock/">THE RESULT</a> (Requires javascript)</p>
 <p>In both implementations, the colour values are set the same way. Basically, I get the current time and set the colour accordingly. The first way uses the 24-hour clock: hours for red, minutes for green, and seconds for blue. For example: 12:37:21 would be #123721. This version of the clock only uses base 10 values.</p>
 <pre><code class="language-javascript">//Get the time
 let date = new Date();
