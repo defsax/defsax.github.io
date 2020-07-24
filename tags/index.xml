@@ -6,17 +6,89 @@
     <description>Recent content in Tags on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2020 02:48:29 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 13:19:45 -0400</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>clock</title>
+      <link>https://perrydefayette.dev/tags/clock/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/clock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>css</title>
       <link>https://perrydefayette.dev/tags/css/</link>
-      <pubDate>Wed, 10 Jun 2020 02:48:29 -0400</pubDate>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
       
       <guid>https://perrydefayette.dev/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>front-end</title>
+      <link>https://perrydefayette.dev/tags/front-end/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/front-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hexadecimal</title>
+      <link>https://perrydefayette.dev/tags/hexadecimal/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/hexadecimal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hexclock</title>
+      <link>https://perrydefayette.dev/tags/hexclock/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/hexclock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://perrydefayette.dev/tags/html/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://perrydefayette.dev/tags/javascript/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time</title>
+      <link>https://perrydefayette.dev/tags/time/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://perrydefayette.dev/tags/web/</link>
+      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/web/</guid>
       <description></description>
     </item>
     
@@ -30,38 +102,11 @@
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://perrydefayette.dev/tags/html/</link>
-      <pubDate>Wed, 10 Jun 2020 02:48:29 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://perrydefayette.dev/tags/javascript/</link>
-      <pubDate>Wed, 10 Jun 2020 02:48:29 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>RSS</title>
       <link>https://perrydefayette.dev/tags/rss/</link>
       <pubDate>Wed, 10 Jun 2020 02:48:29 -0400</pubDate>
       
       <guid>https://perrydefayette.dev/tags/rss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>front-end</title>
-      <link>https://perrydefayette.dev/tags/front-end/</link>
-      <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/front-end/</guid>
       <description></description>
     </item>
     
@@ -134,15 +179,6 @@
       <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
       
       <guid>https://perrydefayette.dev/tags/codepen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://perrydefayette.dev/tags/web/</link>
-      <pubDate>Tue, 25 Feb 2020 15:33:36 -0500</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/web/</guid>
       <description></description>
     </item>
     

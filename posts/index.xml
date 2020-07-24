@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Hexclock and Hextime</title>
+      <link>https://perrydefayette.dev/posts/hexclock/</link>
+      <pubDate>Tue, 14 Jul 2020 16:25:51 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/posts/hexclock/</guid>
+      <description>There&amp;rsquo;s a little executable in the quasi console driven &amp;ldquo;hacking&amp;rdquo; game Hacknet. If you run hexclock.exe in the game, a small widget appears and changes your HUD&amp;rsquo;s colour according to the in-game time.
+So what did it take to make a web version of the hexclock? I quickly realized that most/all of the single-page &amp;ldquo;hexclock&amp;rdquo; apps that I found were variations of setting the colour value of the background using hexidecimal.</description>
+    </item>
+    
+    <item>
       <title>Breakout: An RSS Reader...</title>
       <link>https://perrydefayette.dev/posts/headlinebreakout/</link>
       <pubDate>Fri, 29 May 2020 19:44:52 -0400</pubDate>

@@ -3,8 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perrydefayette.dev/tags/clock/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perrydefayette.dev/tags/css/</loc>
-    <lastmod>2020-06-10T03:30:06-04:00</lastmod>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/front-end/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/hexadecimal/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/hexclock/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/html/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/javascript/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/projects/hexclock/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/time/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/web/</loc>
+    <lastmod>2020-07-24T13:19:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/posts/hexclock/</loc>
+    <lastmod>2020-07-21T16:30:01-04:00</lastmod>
   </url>
   
   <url>
@@ -18,22 +73,7 @@
   </url>
   
   <url>
-    <loc>https://perrydefayette.dev/tags/html/</loc>
-    <lastmod>2020-06-10T03:30:06-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/javascript/</loc>
-    <lastmod>2020-06-10T03:30:06-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://perrydefayette.dev/tags/rss/</loc>
-    <lastmod>2020-06-10T03:30:06-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/</loc>
     <lastmod>2020-06-10T03:30:06-04:00</lastmod>
   </url>
   
@@ -44,11 +84,6 @@
   
   <url>
     <loc>https://perrydefayette.dev/posts/addingrss/</loc>
-    <lastmod>2020-04-10T20:36:27-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/front-end/</loc>
     <lastmod>2020-04-10T20:36:27-04:00</lastmod>
   </url>
   
@@ -99,11 +134,6 @@
   
   <url>
     <loc>https://perrydefayette.dev/posts/codepenwebworker/</loc>
-    <lastmod>2020-03-10T13:10:56-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/web/</loc>
     <lastmod>2020-03-10T13:10:56-04:00</lastmod>
   </url>
   

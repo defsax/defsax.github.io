@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>front-end on Perry Defayette</title>
-    <link>https://perrydefayette.dev/tags/front-end/</link>
-    <description>Recent content in front-end on Perry Defayette</description>
+    <title>hexclock on Perry Defayette</title>
+    <link>https://perrydefayette.dev/tags/hexclock/</link>
+    <description>Recent content in hexclock on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Jul 2020 13:19:45 -0400</lastBuildDate>
     
-	<atom:link href="https://perrydefayette.dev/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://perrydefayette.dev/tags/hexclock/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -28,15 +28,6 @@
       <guid>https://perrydefayette.dev/posts/hexclock/</guid>
       <description>There&amp;rsquo;s a little executable in the quasi console driven &amp;ldquo;hacking&amp;rdquo; game Hacknet. If you run hexclock.exe in the game, a small widget appears and changes your HUD&amp;rsquo;s colour according to the in-game time.
 So what did it take to make a web version of the hexclock? I quickly realized that most/all of the single-page &amp;ldquo;hexclock&amp;rdquo; apps that I found were variations of setting the colour value of the background using hexidecimal.</description>
-    </item>
-    
-    <item>
-      <title>Fetching an RSS Feed (Without a Library)</title>
-      <link>https://perrydefayette.dev/posts/addingrss/</link>
-      <pubDate>Thu, 09 Apr 2020 11:08:31 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/posts/addingrss/</guid>
-      <description>Here&amp;rsquo;s a feeble attempt to stay up to date with the news without actually reading it (that&amp;rsquo;s what people do, right?). I wanted to write something that grabbed headlines from different sources to display overtop of another project I was working on. A little research turned up RSS (Really Simple Syndication) feeds in all their 2000&amp;rsquo;s glory. I dug around some more and looked for ways to encorporate them. This was actually a little more difficult than I&amp;rsquo;d originally thought.</description>
     </item>
     
   </channel>
