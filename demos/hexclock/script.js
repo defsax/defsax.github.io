@@ -66,11 +66,11 @@ function convert(){
   document.getElementById("time").innerHTML = "." + backCol;
   
   if(backCol.length === 3)
-    backCol = "#" + backCol + 0 + 0 + 0;
+    backCol = "#" + 0 + 0 + 0 + backCol;
   else if(backCol.length === 4)
-    backCol = "#" + backCol + 0 + 0;
+    backCol = "#" + 0 + 0 + backCol;
   else if(backCol.length === 5)
-    backCol = "#" + backCol + 0;
+    backCol = "#" + 0 + backCol;
   else
     backCol = "#" + backCol;
   
