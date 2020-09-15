@@ -6,10 +6,82 @@
     <description>Recent content in Tags on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2020 13:19:45 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 14:35:57 -0400</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>css</title>
+      <link>https://perrydefayette.dev/tags/css/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://perrydefayette.dev/tags/development/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>front-end</title>
+      <link>https://perrydefayette.dev/tags/front-end/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/front-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://perrydefayette.dev/tags/game/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://perrydefayette.dev/tags/html/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://perrydefayette.dev/tags/javascript/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pong</title>
+      <link>https://perrydefayette.dev/tags/pong/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/pong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://perrydefayette.dev/tags/web/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/web/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>clock</title>
@@ -17,24 +89,6 @@
       <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
       
       <guid>https://perrydefayette.dev/tags/clock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>https://perrydefayette.dev/tags/css/</link>
-      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>front-end</title>
-      <link>https://perrydefayette.dev/tags/front-end/</link>
-      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/front-end/</guid>
       <description></description>
     </item>
     
@@ -57,47 +111,11 @@
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://perrydefayette.dev/tags/html/</link>
-      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://perrydefayette.dev/tags/javascript/</link>
-      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>time</title>
       <link>https://perrydefayette.dev/tags/time/</link>
       <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
       
       <guid>https://perrydefayette.dev/tags/time/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://perrydefayette.dev/tags/web/</link>
-      <pubDate>Fri, 24 Jul 2020 13:19:45 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>game</title>
-      <link>https://perrydefayette.dev/tags/game/</link>
-      <pubDate>Wed, 10 Jun 2020 02:48:29 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/game/</guid>
       <description></description>
     </item>
     

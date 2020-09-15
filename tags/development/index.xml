@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on Perry Defayette</title>
+    <link>https://perrydefayette.dev/tags/development/</link>
+    <description>Recent content in development on Perry Defayette</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2020 14:35:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://perrydefayette.dev/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Game: PONG</title>
+      <link>https://perrydefayette.dev/projects/pong/</link>
+      <pubDate>Tue, 15 Sep 2020 14:35:57 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/projects/pong/</guid>
+      <description>  Pong     manual:
+ball:
+ left:
+ right:
+      </description>
+    </item>
+    
+  </channel>
+</rss>
