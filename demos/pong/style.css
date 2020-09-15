@@ -1,0 +1,101 @@
+.sliderContainer{
+  margin: 5px 5px 10px 5px;
+  background-color: black;
+  border-radius: 16px;
+  width: 100%;
+  height: 25px;
+  padding: 4px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: inherit;
+  height: inherit;
+  background: #000000;
+  outline: none;
+  opacity: 1;
+  border-radius: 15px;
+  margin: 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  cursor: grab;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  cursor: grab;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider::-ms-thumb{
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  cursor: grab;
+  border-radius: 50%;
+  border: none;
+}
+
+.switch{
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 8px;
+  outline: none;
+  border: 2px solid black;
+}
+
+input:checked{
+  background-color: black;
+}
+
+.container{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+  }
+  .controls{
+    margin-left: 0;
+    margin-top: 1em;
+  }
+}
+
+
+.controls{
+  margin-left: 1em;
+}
+
+#pongCanvas{
+  border: 1px solid black;
+}
+
+p{
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+body{
+  font-family: "Courier New", Courier, monospace;
+}
