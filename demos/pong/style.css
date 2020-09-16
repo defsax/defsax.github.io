@@ -65,11 +65,15 @@ input:checked{
 }
 
 .container{
-  margin-top: 1em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+#pongCanvas{
+  border: 1px solid black;
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -77,18 +81,24 @@ input:checked{
     flex-direction: column;
   }
   .controls{
-    margin-left: 0;
+    margin-left: 0em;
     margin-top: 1em;
+  }
+  .sliderContainer{
+    margin: 0px 0px 5px 0px;
+  }
+  p{
+    margin-top: 0em;
+  }
+  #pongCanvas{
+    margin-top: 0em;
   }
 }
 
-
-.controls{
-  margin-left: 1em;
-}
-
-#pongCanvas{
-  border: 1px solid black;
+@media only screen and (min-width: 768px) {
+  .controls{
+    margin-left: 1em;
+  }
 }
 
 p{

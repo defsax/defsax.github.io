@@ -3,13 +3,25 @@ import Paddle from './paddle.js';
 import Ball from './ball.js';
 import InputHandler from './input.js';
 
-const WIDTH = 400;
-const HEIGHT = 400;
+var WIDTH = 400;
+var HEIGHT = 400;
 
 var speedslider = document.getElementById("speedslider");
 var leftslider = document.getElementById("leftslider");
 var rightslider = document.getElementById("rightslider");
 var canvas = document.getElementById("pongCanvas");
+
+if(document.body.clientWidth <= 400 || window.innerHeight <= 400){  
+  canvas.width = document.body.clientWidth;
+  canvas.height = document.body.clientWidth;
+  
+  WIDTH = canvas.width;
+  HEIGHT = canvas.width;
+  
+  //adjust 
+  //document.getElementById("cntrls").style.margin = 0;
+}
+
 var ctx = canvas.getContext("2d");
 
 leftslider.oninput = function(){
