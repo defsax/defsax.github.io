@@ -18,8 +18,17 @@ if(document.body.clientWidth <= 400 || window.innerHeight <= 400){
   WIDTH = canvas.width;
   HEIGHT = canvas.width;
   
-  //adjust 
-  //document.getElementById("cntrls").style.margin = 0;
+  var elem = document.documentElement;
+  
+   if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
 }
 
 var ctx = canvas.getContext("2d");
