@@ -50,7 +50,7 @@
   color: var(--textcolour);
 }
 
-#searchbar, #searchbutton{
+/*#searchbar, #searchbutton*/.search{
   padding: 8px;
   border-radius: 15px;
   border: none;
