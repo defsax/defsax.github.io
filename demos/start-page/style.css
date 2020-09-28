@@ -10,6 +10,13 @@
   outline: none;
 }
 
+body, html{
+  background-color: var(--backcolour);
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+}
+
 .container{
   padding-top: 30vh;
   margin: auto;
@@ -45,29 +52,36 @@
   cursor: help;
 }
 
+#skull1{
+  display: inline;
+}
+#skull2{
+  display: none;
+}
+
 #title{
   font-size: 2em;
   color: var(--textcolour);
 }
 
-/*#searchbar, #searchbutton*/.search{
+.search{
   padding: 8px;
   border-radius: 15px;
   border: none;
   
-  -webkit-box-shadow: 10px 10px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    10px 10px rgb(60, 60, 60);  /* Firefox 3.5 - 3.6 */
-  box-shadow:         10px 10px rgb(60, 60, 60);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  -webkit-appearance: none;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -webkit-box-shadow: 10px 10px 0px rgb(60, 60, 60);  
+  /* Firefox 3.5 - 3.6 */
+  -moz-box-shadow: 10px 10px 0px rgb(60, 60, 60);  
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  box-shadow: 10px 10px 0px rgb(60, 60, 60);  
 
   vertical-align: top;
 }
 
 #searchbar{
   width: 100%;
-  
-    -webkit-box-shadow: 10px 10px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    10px 10px rgb(60, 60, 60);  /* Firefox 3.5 - 3.6 */
-  box-shadow:         10px 10px rgb(60, 60, 60);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 #searchbutton{
@@ -91,27 +105,35 @@
 
 @media only screen and (max-width: 768px) {
   .container{
-    margin: 0px;
+/*     margin-left: 1em; */
     min-width: 0px;
+    padding-top: 30vh;
+    padding-left: 1em;
+    width: 100%;
+/*     display: inline; */
   }
   .contentcontainer{
-    margin: auto;
+/*     margin: auto; */
     width: inherit;
   }
   .inputcontainer{
     margin-top: 0.5em;
     flex-direction: column;
-    width: 100%;
+  }
+  .timecontainer{
+    font-size: 0.75em;
+  }
+  #skull1{
+    display: none;
+  }
+  #skull2{
+    display: inline;
   }
   #searchbutton{
     margin: 0.5em 0em 0em 0em;
   }
-  
-}
-
-body, html{
-  background-color: var(--backcolour);
-  background-repeat: no-repeat;
-  height: 100%;
-  
+  #searchbar{
+    height: 19px;
+    width: 80%;
+  }
 }
