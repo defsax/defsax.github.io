@@ -65,14 +65,15 @@
 #searchbar{
   width: 100%;
   
-  -webkit-box-shadow: 10px 10px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -webkit-box-shadow: 10px 10px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    10px 10px rgb(60, 60, 60);  /* Firefox 3.5 - 3.6 */
   box-shadow:         10px 10px rgb(60, 60, 60);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 #searchbutton{
-  width: 100px;
-  margin-left: 1em; 
+  width: 75px;
+  flex-shrink: 0;
+  margin-left: 1em;
   background-color: white;
   height: 35px;
   padding: 0px;
@@ -86,6 +87,26 @@
   -webkit-box-shadow: 4px 4px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    4px 4px rgb(60, 60, 60);  /* Firefox 3.5 - 3.6 */
   box-shadow:         4px 4px rgb(60, 60, 60);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    margin: 0px;
+    min-width: 0px;
+  }
+  .contentcontainer{
+    margin: auto;
+    width: inherit;
+  }
+  .inputcontainer{
+    margin-top: 0.5em;
+    flex-direction: column;
+    width: 100%;
+  }
+  #searchbutton{
+    margin: 0.5em 0em 0em 0em;
+  }
+  
 }
 
 body, html{
