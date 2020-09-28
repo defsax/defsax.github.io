@@ -6,10 +6,20 @@
     <description>Recent content in html on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2020 14:35:57 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 10:40:43 -0400</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom Start Page</title>
+      <link>https://perrydefayette.dev/projects/start-page/</link>
+      <pubDate>Mon, 28 Sep 2020 10:40:43 -0400</pubDate>
+      
+      <guid>https://perrydefayette.dev/projects/start-page/</guid>
+      <description>  Start   hello...
+🕱   00:00:00  .000000  date        </description>
+    </item>
     
     <item>
       <title>Game: PONG</title>

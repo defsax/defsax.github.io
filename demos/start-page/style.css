@@ -1,0 +1,81 @@
+:root{
+  --pagewidth: 70%;
+  --minwidth: 600px;
+  --backcolour:  rgba(110, 193, 255, 1);
+  --backcolgrad: #A6206A, #EC1C4B, #F16A43, #F7D969, #2F9395;
+  --textcolour: #FFF;
+}
+
+.container{
+  padding-top: 30vh;
+  margin: auto;
+  width: var(--pagewidth);
+  font-family: "Inconsolata", "Roboto Mono", "Consolas", "Courier New", monospace;
+  min-width: var(--minwidth);
+}
+
+.contentcontainer{
+  margin: auto;
+  height: auto;
+  width: 50%;
+}
+
+.inputcontainer{
+  display: flex;
+}
+
+.timecontainer{
+  margin: 1em;
+  display: flex;
+  color: var(--textcolour);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#hex{
+  text-decoration: none;
+  padding: 0em 1em 0em 1em;
+}
+#hex:hover{
+  cursor: help;
+}
+
+#title{
+  font-size: 2em;
+  color: var(--textcolour);
+}
+
+#searchbar, #searchbutton{
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 10px 10px rgb(60, 60, 60);
+  vertical-align: top;
+}
+
+#searchbar{
+  width: 100%;
+}
+
+#searchbutton{
+  width: 100px;
+  margin-left: 1em;
+  background-color: white;
+  height: 35px;
+  padding: 0px;
+  font-size: 25px;
+}
+
+#searchbutton:active{
+  transform: translate(6px, 6px);
+  box-shadow: 4px 4px rgb(60, 60, 60);
+  color: black;
+}
+
+body, html{
+  background-color: var(--backcolour);
+  background-repeat: no-repeat;
+  height: 100%;
+  
+}
