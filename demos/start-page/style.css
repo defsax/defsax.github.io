@@ -1,8 +1,7 @@
 :root{
   --pagewidth: 70%;
   --minwidth: 600px;
-  --backcolour:  rgba(110, 193, 255, 1);
-  --backcolgrad: #A6206A, #EC1C4B, #F16A43, #F7D969, #2F9395;
+  --backcolour:  rgba(0, 0, 0, 1);
   --textcolour: #FFF;
 }
 
