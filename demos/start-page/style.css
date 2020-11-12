@@ -71,11 +71,11 @@ body, html{
   
   -webkit-appearance: none;
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -webkit-box-shadow: 10px 10px 0px rgb(60, 60, 60);  
+  -webkit-box-shadow: 6px 6px 0px rgb(60, 60, 60);  
   /* Firefox 3.5 - 3.6 */
-  -moz-box-shadow: 10px 10px 0px rgb(60, 60, 60);  
+  -moz-box-shadow: 6px 6px 0px rgb(60, 60, 60);  
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  box-shadow: 10px 10px 0px rgb(60, 60, 60);  
+  box-shadow: 6px 6px 0px rgb(60, 60, 60);  
 
   vertical-align: top;
 }
@@ -95,12 +95,12 @@ body, html{
 }
 
 #searchbutton:active{
-  transform: translate(6px, 6px);
+  transform: translate(3px, 3px);
   color: black;
   
-  -webkit-box-shadow: 4px 4px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    4px 4px rgb(60, 60, 60);  /* Firefox 3.5 - 3.6 */
-  box-shadow:         4px 4px rgb(60, 60, 60);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  -webkit-box-shadow: 3px 3px rgb(60, 60, 60);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px rgb(60, 60, 60);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px rgb(60, 60, 60);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 @media only screen and (max-width: 768px) {

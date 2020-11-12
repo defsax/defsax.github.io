@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function(e){
   sButton.addEventListener("click", search);
   document.addEventListener("keydown", function(ev){
     if(ev.keyCode === 13) {
-      sButton.style.transform = "translate(6px, 6px)";
-      sButton.style.boxShadow = "4px 4px rgb(60, 60, 60)";
+      sButton.style.transform = "translate(3px, 3px)";
+      sButton.style.boxShadow = "3px 3px rgb(60, 60, 60)";
       search();
     }
   });
