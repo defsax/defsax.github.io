@@ -18,7 +18,7 @@
       
       <guid>https://perrydefayette.dev/posts/linked-lists/</guid>
       <description>What is a linked list? Basically, a linked list is a type of data structure that can be used to organize information. Basically, but so what? So are maps, objects, arrays, vectors, hashes, dictionaries, queues, etc&amp;hellip; What specifically is a linked list? Well, it&amp;rsquo;s pretty self-explanatory. They store data in a node structure wherein each node contains a reference (or link) to the next node, and so on.
-Contiguous Array</description>
+If only that was all to be said about this topic!</description>
     </item>
     
     <item>
