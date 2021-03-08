@@ -35,7 +35,7 @@
 
   
   
-  <title>Linked Lists | Perry Defayette</title>
+  <title>RnR: Linked Lists | Perry Defayette</title>
 </head>
 
   <style>
@@ -46,7 +46,7 @@
       padding-bottom: 2.25rem;
     }
   </style>
-  <body onload="start(&#34;Linked Lists&#34;)">
+  <body onload="start(&#34;RnR: Linked Lists&#34;)">
     <a href="#main">skip to content</a>
     <svg style="display: none">
   <symbol id="bookmark" viewBox="0 0 40 50">
@@ -231,7 +231,7 @@
         <div>
           
   <main id="main">
-    <h1 id="title">Linked Lists</h1>
+    <h1 id="title">RnR: Linked Lists</h1>
     
     
       <div class="date">
@@ -310,10 +310,10 @@
       
       <h1 id="what-is-a-linked-list">What is a linked list?</h1>
 <p>Basically, a linked list is a type of data structure that can be used to organize information. Basically, but so what? So are maps, objects, arrays, vectors, hashes, dictionaries, queues, etc&hellip; What <em>specifically</em> is a linked list? Well, it&rsquo;s pretty self-explanatory. They store data in a node structure wherein each node contains a reference (or link) to the next node, and so on.</p>
-<p><img src="/images/linked-lists/Linkedlist-2.png" alt="Contiguous Array"></p>
+<p><img src="/images/linked-lists/Linkedlist-2.png" alt="Linked list structure"></p>
 <h3 id="if-only-that-was-all-to-be-said-about-this-topic-yeah-right">If only that was all to be said about this topic! Yeah, right.</h3>
 <p>Maybe I can start to explain by making their case. I did not find evidence of this, but I imagine that linked lists were invented in a time when computer memory was scarce enough to require very creative methods for storing data. There was a time not that long ago when programmers needed to manually allocate space in memory to store their data in. So, when you&rsquo;ve got 4 bytes of memory free here, and 10 bytes there, and you need to store 16 floats and be able to access them relatively conveniently in one place, maybe an array won&rsquo;t cut it.</p>
-<p><img src="/images/linked-lists/Arrays-1.png," alt="image of array" title="Contiguous Array"></p>
+<p><img src="/images/linked-lists/Arrays-1.png" alt="Contiguous Array"></p>
 <p>Why not? This is perhaps a good place to start to explain how linked lists work. Where an array will store data in contiguous locations in memory, a linked list is less rigid. A linked list does not need contiguous memory blocks to store information. At a low level, a node in a linked list contains a reference, and this reference need only be the <em>location in memory</em> of the next node in the list.</p>
 <p>As an aside, the concept of storing a memory address in a variable is not exclusive to linked lists. In fact, storage of a memory address in a variable is known as a pointer, and has broader and equally important implications for computer science.</p>
 <p>Here&rsquo;s an example of a linked list node (in C, since these details are abstracted away in javascript, basically).</p>
@@ -340,7 +340,7 @@
 </code></pre>
 <p>Here we have a linked list with three elements: head, second and third. Each node is initialized with a float as an example. Then, head&rsquo;s next pointer is set to second, second&rsquo;s next pointer is set to third, and third&rsquo;s next pointer points to no memory address, so it is NULL.</p>
 <p>If we output the memory locations of these three pointers, and their next nodes, we would get:</p>
-<p><img src="/images/linked-lists/threenodes.png," alt="Memory locations of 3 nodes in a linked list" title="Memory locations of 3 nodes in a linked list"></p>
+<p><img src="/images/linked-lists/threenodes.png" alt="Memory locations of 3 nodes in a linked list"></p>
 <p><code>head-&gt;next</code> is set to the same location as second! <code>second-&gt;next</code> is set to the same location as third, and third&rsquo;s next is 0, since it is hooked up to nothing currently.</p>
 <p>Now that this is hooked up, we can use these node&rsquo;s pointers to access data along the list. To do this, we could simply call <code>node-&gt;next-&gt;data</code> list so:</p>
 <pre><code class="language-c++">float headData = head-&gt;data;
@@ -349,12 +349,12 @@ float thirdData = head-&gt;next-&gt;next-&gt;data;
 //and so on...
 </code></pre>
 <p>Outputs:</p>
-<p><img src="/images/linked-lists/threenodesoutput.png," alt="Outputs of 3 nodes in a linked list" title="Data outputs of 3 nodes in a linked list"></p>
+<p><img src="/images/linked-lists/threenodesoutput.png" alt="Outputs of 3 nodes in a linked list"></p>
 <p>Exactly as we declared the data! And this is essentially how linked lists work. Of course, implementing one in this way is awkward and repetitive, so in real life you might declare a LinkedList class that takes care of adding and removing Nodes.</p>
 <p>But wait! You might have noticed that these memory locations appear to be contiguous, an even 20 bytes apart:
-<img src="/images/linked-lists/threenodes.png," alt="Memory locations of 3 nodes in a linked list" title="Memory locations of 3 nodes in a linked list"></p>
+<img src="/images/linked-lists/threenodes.png" alt="Memory locations of 3 nodes in a linked list"></p>
 <p>Compare this to the memory locations of the elements in an array of floats with similar values:</p>
-<p><img src="/images/linked-lists/threearrayaddresses.png," alt="Memory locations of 3 elements in an array" title="Memory locations of 3 elements in an array"></p>
+<p><img src="/images/linked-lists/threearrayaddresses.png" alt="Memory locations of 3 elements in an array"></p>
 <p>Contiguous and 4 bytes apart, since a float is 4 bytes in size. The linked list is not bound by the order that the nodes are created in. Although the linked list has a larger memory footprint (20 bytes in this case), each node is self contained with its data and accessing information. This allows for nodes in the list to be in any order, or inserted and removed from any point in the array. Consider if we were to declare the nodes in our list in a different order and output the results:</p>
 <pre><code class="language-c++">  Node *third = new Node(3.3);
   Node *head = new Node(1.1);
@@ -364,10 +364,10 @@ float thirdData = head-&gt;next-&gt;next-&gt;data;
   head-&gt;next = second;
   second-&gt;next = third;
 </code></pre>
-<p><img src="/images/linked-lists/threenodesunordered.png," alt="Memory locations of 3 nodes linked list unordered" title="Memory locations of 3 nodes linked list unordered"></p>
+<p><img src="/images/linked-lists/threenodesunordered.png" alt="Memory locations of 3 nodes linked list unordered"></p>
 <p>The order is purely coincidental. At least in an older language like C or C++, an array can not be dynamically sized. So when you declare an array, you need to tell the compiler up front how many elements you want and of what type they are. Then, that specific amount of memory is allocated for that array. By contrast, a linked list can be dynamically prepended or appended with data after the list has been created. Because of how pointers work, all the relating nodes need to know are the memory addresses of the next nodes, and nothing else.</p>
 <p>I have commented today on singly linked lists, but there are also doubly linked lists. Doubly linked lists are where each node has two pointers: one to the next node and one to the previous node. This allows for list traversal in two directions instead of one.</p>
-<p><img src="/images/linked-lists/doublylinkedlist.png," alt="Doubly linked list" title="Doubly linked list"></p>
+<p><img src="/images/linked-lists/doublylinkedlist.png" alt="Doubly linked list"></p>
 <p>In this case, the code only requires one extra pointer.</p>
 <pre><code class="language-c++">struct Node {
   //type of data that you want to store.
