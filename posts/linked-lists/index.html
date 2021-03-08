@@ -316,7 +316,7 @@
 <p><img src="/images/linked-lists/Arrays-1.png" alt="Contiguous Array"></p>
 <p>Why not? This is perhaps a good place to start to explain how linked lists work. Where an array will store data in contiguous locations in memory, a linked list is less rigid. A linked list does not need contiguous memory blocks to store information. At a low level, a node in a linked list contains a reference, and this reference need only be the <em>location in memory</em> of the next node in the list.</p>
 <p>As an aside, the concept of storing a memory address in a variable is not exclusive to linked lists. In fact, storage of a memory address in a variable is known as a pointer, and has broader and equally important implications for computer science.</p>
-<p>Here&rsquo;s an example of a linked list node (in C, since these details are abstracted away in javascript, basically).</p>
+<p>Here&rsquo;s an example of a linked list node (in C, since these details are abstracted away in javascript, basically):</p>
 <pre><code class="language-c++">struct Node {
   //type of data that you want to store.
   float data;
@@ -330,7 +330,7 @@
   }
 };
 </code></pre>
-<p>Once you have a declaration of a Node object, creating a linked list is as easy as hooking up the pointers.</p>
+<p>Once you have a declaration of a Node object, creating a linked list is as easy as hooking up the pointers:</p>
 <pre><code class="language-c++">  Node *head = new Node(1.1);
   Node *second = new Node(2.2);
   Node *third = new Node(3.3);
