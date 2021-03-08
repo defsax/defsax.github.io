@@ -6,10 +6,20 @@
     <description>Recent content in javascript on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2020 10:40:43 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 10:04:45 -0500</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linked Lists</title>
+      <link>https://perrydefayette.dev/posts/linked-lists/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/posts/linked-lists/</guid>
+      <description>What is a linked list? Basically, a linked list is a type of data structure that can be used to organize information. Basically, but so what? So are maps, objects, arrays, vectors, hashes, dictionaries, queues, etc&amp;hellip; What specifically is a linked list? Well, it&amp;rsquo;s pretty self-explanatory. They store data in a node structure wherein each node contains a reference (or link) to the next node, and so on.
+If only that was all to be said about this topic!</description>
+    </item>
     
     <item>
       <title>Custom Start Page</title>

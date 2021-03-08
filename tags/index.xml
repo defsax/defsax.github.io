@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Perry Defayette</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2020 10:40:43 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 10:04:45 -0500</lastBuildDate>
     
 	<atom:link href="https://perrydefayette.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>c&#43;&#43;</title>
+      <link>https://perrydefayette.dev/tags/c&#43;&#43;/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://perrydefayette.dev/tags/javascript/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linked lists</title>
+      <link>https://perrydefayette.dev/tags/linked-lists/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/linked-lists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pointers</title>
+      <link>https://perrydefayette.dev/tags/pointers/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/pointers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://perrydefayette.dev/tags/programming/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://perrydefayette.dev/tags/software/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://perrydefayette.dev/tags/web/</link>
+      <pubDate>Sun, 07 Mar 2021 10:04:45 -0500</pubDate>
+      
+      <guid>https://perrydefayette.dev/tags/web/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>css</title>
@@ -35,24 +98,6 @@
       <pubDate>Mon, 28 Sep 2020 10:40:43 -0400</pubDate>
       
       <guid>https://perrydefayette.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://perrydefayette.dev/tags/javascript/</link>
-      <pubDate>Mon, 28 Sep 2020 10:40:43 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://perrydefayette.dev/tags/web/</link>
-      <pubDate>Mon, 28 Sep 2020 10:40:43 -0400</pubDate>
-      
-      <guid>https://perrydefayette.dev/tags/web/</guid>
       <description></description>
     </item>
     

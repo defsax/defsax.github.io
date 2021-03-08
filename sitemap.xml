@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perrydefayette.dev/tags/c&#43;&#43;/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/javascript/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/posts/linked-lists/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/linked-lists/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/pointers/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/programming/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/software/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perrydefayette.dev/tags/web/</loc>
+    <lastmod>2021-03-07T10:04:45-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perrydefayette.dev/tags/css/</loc>
     <lastmod>2020-09-28T17:43:37-04:00</lastmod>
   </url>
@@ -19,21 +64,6 @@
   
   <url>
     <loc>https://perrydefayette.dev/tags/html/</loc>
-    <lastmod>2020-09-28T17:43:37-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/javascript/</loc>
-    <lastmod>2020-09-28T17:43:37-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/</loc>
-    <lastmod>2020-09-28T17:43:37-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perrydefayette.dev/tags/web/</loc>
     <lastmod>2020-09-28T17:43:37-04:00</lastmod>
   </url>
   
